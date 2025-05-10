@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { container } from "../../config/di-container";
+import { container } from "../../config/container/user-di-container";
 import { TYPES } from "../../config/types";
 import { UserController } from "../controllers/UserController";
 import { userRoutes } from "./user.routes";

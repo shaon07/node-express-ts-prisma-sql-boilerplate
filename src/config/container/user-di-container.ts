@@ -1,13 +1,13 @@
 import { Container } from "inversify";
-import { CreateUser } from "../application/use-cases/user/CreateUser";
-import { DeleteUser } from "../application/use-cases/user/DeleteUser";
-import { GetUser } from "../application/use-cases/user/GetUser";
-import { LoginUser } from "../application/use-cases/user/LoginUser";
-import { UpdateUser } from "../application/use-cases/user/UpdateUser";
-import { IUserRepository } from "../domain/repositories/IUserRepository";
-import { PrismaUserRepository } from "../infrastructure/repositories/PrismaUserRepository";
-import { UserController } from "../interface/controllers/UserController";
-import { TYPES } from "./types";
+import { CreateUser } from "../../application/use-cases/user/CreateUser";
+import { DeleteUser } from "../../application/use-cases/user/DeleteUser";
+import { GetUser } from "../../application/use-cases/user/GetUser";
+import { LoginUser } from "../../application/use-cases/user/LoginUser";
+import { UpdateUser } from "../../application/use-cases/user/UpdateUser";
+import { IUserRepository } from "../../domain/repositories/IUserRepository";
+import { PrismaUserRepository } from "../../infrastructure/repositories/PrismaUserRepository";
+import { UserController } from "../../interface/controllers/UserController";
+import { TYPES } from "../types";
 
 const container = new Container();
 
