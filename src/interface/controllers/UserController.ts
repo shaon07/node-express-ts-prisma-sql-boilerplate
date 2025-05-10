@@ -5,11 +5,11 @@ import {
   UserResponseDto,
   mapToUserResponseDto,
 } from "../../application/dtos/UserResponseDto";
-import { CreateUser } from "../../application/use-cases/CreateUser";
-import { DeleteUser } from "../../application/use-cases/DeleteUser";
-import { GetUser } from "../../application/use-cases/GetUser";
-import { LoginUser } from "../../application/use-cases/LoginUser";
-import { UpdateUser } from "../../application/use-cases/UpdateUser";
+import { CreateUser } from "../../application/use-cases/user/CreateUser";
+import { DeleteUser } from "../../application/use-cases/user/DeleteUser";
+import { GetUser } from "../../application/use-cases/user/GetUser";
+import { LoginUser } from "../../application/use-cases/user/LoginUser";
+import { UpdateUser } from "../../application/use-cases/user/UpdateUser";
 import { TYPES } from "../../config/types";
 import { User } from "../../domain/entities/User";
 import { sendSuccessResponse } from "../../utils/response";

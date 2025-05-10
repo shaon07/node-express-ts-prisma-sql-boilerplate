@@ -1,9 +1,9 @@
 import { Container } from "inversify";
-import { CreateUser } from "../application/use-cases/CreateUser";
-import { DeleteUser } from "../application/use-cases/DeleteUser";
-import { GetUser } from "../application/use-cases/GetUser";
-import { LoginUser } from "../application/use-cases/LoginUser";
-import { UpdateUser } from "../application/use-cases/UpdateUser";
+import { CreateUser } from "../application/use-cases/user/CreateUser";
+import { DeleteUser } from "../application/use-cases/user/DeleteUser";
+import { GetUser } from "../application/use-cases/user/GetUser";
+import { LoginUser } from "../application/use-cases/user/LoginUser";
+import { UpdateUser } from "../application/use-cases/user/UpdateUser";
 import { IUserRepository } from "../domain/repositories/IUserRepository";
 import { PrismaUserRepository } from "../infrastructure/repositories/PrismaUserRepository";
 import { UserController } from "../interface/controllers/UserController";

@@ -1,11 +1,11 @@
 import { inject, injectable } from "inversify";
 import jwt from "jsonwebtoken";
-import { TYPES } from "../../config/types";
-import { User } from "../../domain/entities/User";
-import { IUserRepository } from "../../domain/repositories/IUserRepository";
-import { UnauthorizedError } from "../../errors/UnauthorizedError";
-import { handleZodError } from "../../utils/error";
-import { LoginDto, loginSchema } from "../schemas/UserSchema";
+import { TYPES } from "../../../config/types";
+import { User } from "../../../domain/entities/User";
+import { IUserRepository } from "../../../domain/repositories/IUserRepository";
+import { UnauthorizedError } from "../../../errors/UnauthorizedError";
+import { handleZodError } from "../../../utils/error";
+import { LoginDto, loginSchema } from "../../schemas/UserSchema";
 
 @injectable()
 export class LoginUser {

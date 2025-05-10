@@ -1,10 +1,10 @@
 import { inject, injectable } from "inversify";
-import { TYPES } from "../../config/types";
-import { User } from "../../domain/entities/User";
-import { IUserRepository } from "../../domain/repositories/IUserRepository";
-import { NotFoundError } from "../../errors/NotFoundError";
-import { handleZodError } from "../../utils/error";
-import { UpdateUserDto, updateUserSchema } from "../schemas/UserSchema";
+import { TYPES } from "../../../config/types";
+import { User } from "../../../domain/entities/User";
+import { IUserRepository } from "../../../domain/repositories/IUserRepository";
+import { NotFoundError } from "../../../errors/NotFoundError";
+import { handleZodError } from "../../../utils/error";
+import { UpdateUserDto, updateUserSchema } from "../../schemas/UserSchema";
 
 @injectable()
 export class UpdateUser {
